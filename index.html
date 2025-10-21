@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anon Group Messaging</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="auth" class="card">
+      <h1>Anon Group Messaging</h1>
+      <div id="auth-forms">
+        <div id="signup-form">
+          <h3>Sign up</h3>
+          <input id="signup-phone" placeholder="Phone number" />
+          <input id="signup-password" type="password" placeholder="Password" />
+          <input id="signup-code" placeholder="Invite code" />
+          <button id="signup-btn">Sign up</button>
+        </div>
+        <div id="login-form">
+          <h3>Login</h3>
+          <input id="login-phone" placeholder="Phone number" />
+          <input id="login-password" type="password" placeholder="Password" />
+          <button id="login-btn">Log in</button>
+        </div>
+      </div>
+      <p class="muted">This site uses phone as username and stores data on the project backend.</p>
+    </div>
+
+    <div id="main" class="hidden">
+      <header>
+        <h2>Welcome <span id="me-phone"></span></h2>
+        <div><button id="logout-btn">Logout</button></div>
+      </header>
+
+      <div class="container">
+        <aside class="sidebar">
+          <h4>Recipients</h4>
+          <ul id="recipients"></ul>
+          <button id="refresh-users">Refresh</button>
+        </aside>
+
+        <section class="content">
+          <div id="compose" class="card">
+            <h3>Compose</h3>
+            <label>To</label>
+            <select id="to-select"><option value=''>-- select --</option></select>
+            <label>Message</label>
+            <textarea id="message-body" rows="4"></textarea>
+            <label><input type="checkbox" id="anonymous-checkbox" checked /> Send anonymously</label>
+            <button id="send-btn">Send</button>
+          </div>
+
+          <div id="inbox" class="card">
+            <h3>Inbox</h3>
+            <button id="refresh-messages">Refresh</button>
+            <ul id="messages-list"></ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set this to your backend URL after deploying to Render: e.g. https://anon-backend.onrender.com
+    const API_BASE = ""; // <-- Fill before deploying to production
+
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

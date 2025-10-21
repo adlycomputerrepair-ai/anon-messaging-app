@@ -1,0 +1,19 @@
+
+body{ font-family: system-ui, -apple-system, Roboto, 'Segoe UI', 'Noto Sans', 'Helvetica Neue', Arial; background:#f4f6f8; margin:0; padding:20px; color:#111; }
+.hidden{ display:none; }
+.card{ background:white; padding:16px; border-radius:10px; box-shadow: 0 4px 14px rgba(20,20,40,0.06); margin-bottom:12px; }
+#auth{ max-width:700px; margin:0 auto; }
+.container{ display:flex; gap:12px; margin-top:12px; }
+.sidebar{ width:220px; }
+.content{ flex:1; }
+header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+input, textarea, select, button{ display:block; width:100%; padding:8px; margin-top:6px; margin-bottom:8px; border-radius:6px; border:1px solid #ddd; box-sizing:border-box; }
+button{ cursor:pointer; background:#2563eb; color:white; border:none; }
+button.secondary{ background:#e5e7eb; color:#111; }
+.muted{ color:#6b7280; font-size:13px; }
+.sidebar ul{ list-style:none; padding:0; margin:0; }
+.sidebar li{ margin-bottom:6px; }
+.sidebar button{ width:100%; text-align:left; background:#f8fafc; color:#111; }
+.messages-list{ list-style:none; padding:0; }
+.meta{ color:#374151; font-size:12px; margin-bottom:6px; }
+.body{ white-space:pre-wrap; font-size:14px; }
